@@ -3,21 +3,32 @@ body {
 }
 
 .header {
-    text-align: center;
+    justify-content: center;
     padding: 10px;
     background-color: lightgray;
+    display: flex;
+}
+
+.title {
+    flex: 2;
+    text-align: center;
+}
+
+.reset-button-container,
+.left-menu-container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
 }
 
 .grid-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
-.gridbox {
+.pixel {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    width: 6.25vw;
-    height: 6.25vw
+    aspect-ratio: 1;
 }
